@@ -38,7 +38,8 @@
 
         /* 图片样式，适当增大高度 */
         header h1 img {
-            height: 48px; /* 原来 36px，现在增大到 48px */
+            height: 48px;
+            /* 原来 36px，现在增大到 48px */
             margin-right: 10px;
         }
 
@@ -83,6 +84,7 @@
             align-items: center;
             color: white;
             text-align: center;
+            will-change: background-image; /* 提前告知浏览器背景图即将变化 */
         }
 
        .banner h1 {
