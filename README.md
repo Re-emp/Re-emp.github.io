@@ -143,7 +143,7 @@
     <header>
         <h1>
             <!-- 使用相对路径 -->
-            <img src="../Re-emp/主页面/logo.jpg" alt="Logo">
+            <img src="/Re-emp/主页面/logo.jpg" alt="Logo">
             Re-emp
         </h1>
     </header>
@@ -168,7 +168,7 @@
         </div>
         <div class="content-img">
             <!-- 使用相对路径 -->
-            <img src="../Re-emp/主页面/合作场景.jpg" alt="合作场景" class="half-size">
+            <img src="/Re-emp/主页面/合作场景.jpg" alt="合作场景" class="half-size">
         </div>
     </div>
     <footer>
