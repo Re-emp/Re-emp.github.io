@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-emp - 关于我们</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            /* 添加背景图并使其铺满页面 */
+            background-image: url('背景图.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            display: flex;
+            /* 去掉 justify-content: space-between */
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #007acc;
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 img {
+            height: 48px;
+            margin-right: 10px; /* 为图片和标题之间添加一些间距 */
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #007acc;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        nav ul li {
+            margin: 0 40px;
+            /* 适当增大间距，让选项更舒展 */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            /* 增大字体大小 */
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            padding: 50px;
+            text-align: center; /* 将 main 内容居中 */
+        }
+
+        main h2 {
+            color: #007acc;
+            margin-bottom: 20px;
+        }
+
+        /* 将关于“Re-emp”标题字体放大 */
+        main h2:first-of-type {
+            font-size: 2em; 
+        }
+
+        /* 突出使命与愿景 */
+        main h2:nth-of-type(2) {
+            font-size: 1.8em; /* 增大字体大小 */
+            margin-top: 50px; /* 增加顶部间距 */
+            /* 移除下划线 */
+        }
+
+        main h3 {
+            font-size: 1.3em; /* 增大子标题字体大小 */
+        }
+
+        /* 统一设置黑色不加粗字体的大小 */
+        main p,
+        .contact-box p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #007acc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .algorithm {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            justify-content: center; /* 将算法内容居中 */
+        }
+
+        .algorithm img {
+            display: none;
+        }
+
+        .team-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-box {
+            background-color: #007acc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 增加样式，将“团队介绍”向下移动 */
+        main h2:nth-of-type(3) {
+            margin-top: 30px; /* 可根据需要调整这个值 */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="../logo.jpg" alt="Re-emp Logo">
+            Re-emp
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../主页面/主页面.html">首页</a></li>
+            <li><a href="../简介/简介.html">简介</a></li>
+            <li><a href="../资讯中心/资讯中心.html">资讯中心</a></li>
+            <li><a href="../用户登录/用户登录.html">用户登录</a></li>
+            <li><a href="关于我们.html">关于我们</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>关于“Re-emp”</h2>
+        <p>基于AI的财务规划与再就业解决方案</p>
+        <p>“Re-emp”是为35 - 40岁高学历失业人群量身打造的智能平台，通过FineRec和CoHHN算法提供精准财务规划与再就业匹配，助力用户平稳度过职业空窗期。</p>
+
+        <h2>使命与愿景</h2>
+        <p>缓解失业人群的经济压力，优化社会人力资源配置。</p>
+        <p>成为连接高技能人才与中小企业的桥梁，推动就业市场的公平与效率。</p>
+
+        <h2>团队介绍</h2>
+        <div class="team-row">
+            <div class="team-member">
+                <img src="刘壮.jpg" alt="刘壮头像">
+                <div>
+                    <p><strong>指导教师</strong>：刘壮：东北财经大学金融科技学院副教授</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-row">
+            <div class="team-member">
+                <img src="朱家岐.jpg" alt="朱家岐头像">
+                <div>
+                    <p>朱家岐：拥有良好的项目管理能力，确保平台项目的顺利推进</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="刘岩.jpg" alt="刘岩头像">
+                <div>
+                    <p>刘岩：软件的搭建，专注AI在金融场景的应用</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-row">
+            <div class="team-member">
+                <img src="王梓恒.jpg" alt="王梓恒头像">
+                <div>
+                    <p>王梓恒：主导项目全周期推进，完成商业计划书及执行方案的编制</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="胡少琼.jpg" alt="胡少琼头像">
+                <div>
+                    <p>胡少琼：UI界面设计，软件的前端页面设计</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="施梦泽.jpg" alt="施梦泽头像">
+                <div>
+                    <p>施梦泽：金融数据分析，为平台的财务规划模块提供技术支持</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="contact-box">
+        <h2>合作与联系</h2>
+        <p>合作机构：东北财经大学金融科技学院 东北财经大学创新创业中心</p>
+        <p>联系方式：邮箱fintech@dufe.edu.cn、电话0411-84710633</p>
+    </div>
+    <footer>
+        <p>&copy;2025 - Re-emp 版权所有</p>
+    </footer>
+</body>
+
+</html>
