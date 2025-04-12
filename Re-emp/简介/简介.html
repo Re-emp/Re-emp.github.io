@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-emp - 简介</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            /* 修改背景图片路径为相对路径 */
+            background-image: url("简介.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        /* 头部样式 */
+        header {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #007acc;
+            display: flex;
+            align-items: center; /* 新增，使logo和标题水平对齐并垂直居中 */
+        }
+        /* 图片样式，适当增大高度 */
+        header h1 img {
+            height: 48px; 
+            margin-right: 10px;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #007acc;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        nav ul li {
+            margin: 0 40px; /* 适当增大间距，让选项更舒展 */
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px; /* 增大字体大小 */
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        /* 主体内容样式 */
+        main {
+            padding: 80px 60px;
+        }
+        main h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #0056b3;
+            margin-bottom: 30px;
+        }
+        main p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        main ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        main ul li {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        /* 页脚样式 */
+        footer {
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            font-size: 16px;
+        }
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            main {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="C:\Users\27782\Desktop\Re-emp\logo.jpg" alt="Logo">
+            Re-emp
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\主页面\主页面.html">首页</a></li>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\简介\简介.html">简介</a></li>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\资讯中心\资讯中心.html">资讯中心</a></li>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\用户登录\用户登录.html">用户登录</a></li>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\关于我们\关于我们.html">关于我们</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>简介</h2>
+        <p>“Re-emp”是一个基于FineRec和CoHHN算法的财务预测以及再就业软件平台，由东北财经大学金融科技学院、金融学院和数据科学与人工智能学院学生团队开发，旨在为35 - 40岁高学历失业人群提供精准财务规划与再就业指导服务，缓解其经济压力，促进社会人力资源优化配置。</p>
+        <p>随着社会经济结构转型和就业市场竞争加剧，35 - 40岁高学历人群面临失业风险上升、再就业困难以及财务规划需求迫切等问题，同时小企业也面临招人难的困境。“Re-emp”平台应运而生，其核心功能包括：</p>
+        <ul>
+            <li><strong>财务规划</strong>：构建全面的财务规划模型，涵盖应急资金管理、债务优化、资产配置与保值增值等模块。通过科学评估用户失业前财务状况，制定个性化财务策略，如计算应急资金规模、优化债务结构、合理配置资产等，确保用户在失业期间及再就业后的财务稳定。</li>
+            <li><strong>再就业指导</strong>：搭建完善的再就业指导体系，通过职业技能评估、在线培训和岗位推荐，帮助用户快速匹配企业需求。利用先进算法捕捉用户岗位偏好，结合市场需求和行业趋势，为用户提供精准的职业技能提升路径和岗位推荐服务。</li>
+        </ul>
+        <p>软件的创新点体现在多个方面：</p>
+        <ul>
+            <li><strong>算法创新</strong>：运用FineRec算法，通过属性 - 观点对抽取和细粒度表示学习，提升岗位推荐的可解释性；采用CoHHN算法，引入异构超图网络结构和双通道聚合机制，有效捕捉用户、企业和岗位间的高阶依赖关系，提高匹配精度。</li>
+            <li><strong>动态资产评估</strong>：结合随机波动模型与LSTM算法，实时调整资产配置策略，适应市场波动和个人财务变化。</li>
+            <li><strong>精准定位与预警</strong>：利用大数据分析技术，实时抓取多平台数据，构建预测模型精准定位潜在失业人群，设立失业预警机制并提供预规划理财策略。</li>
+            <li><strong>信息安全保障</strong>：建立基于区块链技术的理财信息安全保障体系，确保用户数据的安全性与完整性。</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy;2025 - Re-emp 版权所有</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-emp - 用户登录</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #007acc;
+            display: flex;
+            align-items: center; /* 新增，使logo和标题水平对齐并垂直居中 */
+        }
+        /* 图片样式，适当增大高度 */
+        header h1 img {
+            height: 48px; /* 原来 36px，现在增大到 48px */
+            margin-right: 10px;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #007acc;
+            padding: 20px 0;
+            /* 加长蓝色条 */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 40px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007acc;
+        }
+
+        /* 主体内容样式 */
+       .main-content {
+            display: flex;
+            flex: 1;
+        }
+
+        /* 图片区域样式 */
+       .image-section {
+            width: 66.66%;
+            background-image: url('用户登录.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* 用户登录区域样式 */
+       .login-section {
+            width: 33.33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 新的登录模块样式 */
+       .new-content-module {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* 登录标题样式 */
+       .new-content-module h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* 表单元素样式 */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+       .checkbox-label {
+            text-align: left;
+            /* 左对齐记住密码 */
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #005f9e;
+        }
+
+        /* 提示信息样式 */
+       .tip {
+            font-size: 12px;
+            /* 缩小字体 */
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #007acc;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="C:\Users\27782\Desktop\Re-emp\logo.jpg" alt="Logo">
+            Re-emp
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\主页面\主页面.html">首页</a></li>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\简介\简介.html">简介</a></li>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\资讯中心\资讯中心.html">资讯中心</a></li>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\用户登录\用户登录.html">用户登录</a></li>
+            <li><a href="C:\Users\27782\Desktop\Re-emp\关于我们\关于我们.html">关于我们</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <div class="image-section"></div>
+        <div class="login-section">
+            <div class="new-content-module">
+                <h2>欢迎登录Re-emp</h2>
+                <form>
+                    <input type="text" placeholder="账号">
+                    <input type="password" placeholder="密码">
+                    <label class="checkbox-label">
+                        <input type="checkbox">记住密码
+                    </label>
+                    <p class="tip">*建议使用谷歌内核的浏览器,以达到最佳预览效果</p>
+                    <button type="submit">登录</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        ©2025 - Re-emp 版权所有
+    </footer>
+</body>
+
+</html>
