@@ -73,7 +73,7 @@
 
        .banner {
             /* 使用相对路径 */
-            background-image: url('主页背景图.png');
+            background-image: url('/Re-emp/主页面/背景图.png');
             background-size: cover;
             background-position: center;
             height: 300px;
